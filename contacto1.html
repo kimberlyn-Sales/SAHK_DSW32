@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario de Contacto - Script Personal</title>
+  <script type="text/javascript" src="file:///C|/xampp/js/jquery-3.2.1.min.js"></script>
+  <link href="file:///C|/xampp/css/bootstrap.min.css" rel="stylesheet">
+  <link href="file:///C|/xampp/css/estilos.css" rel="stylesheet">
+  <script type="text/javascript" src="file:///C|/xampp/js/bootstrap.min.js"></script>
+</head>
+<style>    
+
+body{
+	background:url(imagenes/Beibehang-3D-Photo-font-b-Wallpaper-b-font-font-b-Space-b-font-Moon-Oil-Paintings.jpg) no-repeat fixed center center #333;
+	background-size: 250;
+	margin-left:300px;
+ }
+	.botton{
+		background-size: 230;
+		margin-left: 20;
+		background: #purple;
+		border-color:red;
+	}
+	.botton{
+		background-size: 230;
+		margin-left: 20;
+		background: #purple;
+		border-color:red;
+	}
+	</style>
+<body>
+  <div id="formulario">
+   <form action="file:///C|/xampp/php/contacto.php" method="POST" class="texto" id="contacto" title="Nombre" role="form">
+   <label for="nombre">Nombre</label>
+   <input name="nombre" type="text" required="required" class="cuadro" id="nombre" placeholder="nombre" tabindex="1" title="Nombre">
+   <br>
+   <br>
+   <label for="email">Email</label>
+   <input name="email" type="email" required="required" class="cuadro" id="email" placeholder="email" tabindex="2" title="Email">
+   <br>
+   <br>
+   <label for="telefono">Teléfono</label>
+   <input name="telefono" type="text" class="cuadro" id="telefono" placeholder="telefono" tabindex="3" title="Telefono">
+   <br>
+   <br>
+   <label for="ciudad">Ciudad</label>
+   <input name="ciudad" type="text" class="cuadro" id="ciudad" placeholder="ciudad" tabindex="4" title="ciudad">
+   <br>
+   <br>
+   <label for="pais">País</label>
+   <input name="pais" type="pais" class="cuadro" id="pais" placeholder="pais" tabindex="5" title="pais">
+   <br>
+   <br>
+   <label for="Mensaje">Mensaje</label>
+   <textarea name="mensaje" rows="4" class="cuadro" id="mensaje" placeholder="mensaje" tabindex="6"></textarea>
+   <br>
+   <br>
+   <input name="enviar" type="submit" class="botton" tabindex="7" value="Enviar">
+   <input type="reset" class="botton" tabindex="8" value="Borrar">
+   <input type="hidden" name="estado" value="1">
+   </form>
+  </div>
+</body>
+</html>
